@@ -11,7 +11,7 @@ export class DataService {
   public messages: Array<Message>;
   constructor(private httpService: HttpClient) { }
 
-  private getMails():any {
+  public getMails():any {
     return this.httpService.get('./assets/data.json');
   }
 }

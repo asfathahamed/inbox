@@ -1,0 +1,17 @@
+<div class="display-flex justify-content-between">
+  <div class="mail-item-left display-flex">
+    <div class="select-mail">
+      <input type="checkbox" id="mail-id">
+    </div>
+    <div class="star-mail" [ngClass]="{'starred-mail': message.important}">
+      <i-feather name="star" class="my-icon"></i-feather>
+    </div>
+    <div class="mail-from-name">{{message.fromName}}</div>
+    <div class="mail-subject">{{message.subject}}</div>
+    <div class="mail-content">- {{message.text}}</div>
+  </div>
+  <div class="mail-actions">
+    <i-feather name="paperclip" class="my-icon"></i-feather>
+    <span class="badge badge-dark">12:46 PM</span>
+  </div>
+</div>

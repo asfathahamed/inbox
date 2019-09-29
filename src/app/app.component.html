@@ -1,0 +1,64 @@
+<div class="pos-f-t">
+  <nav class="navbar navbar-light bg-primary navbar-dark mb-2">
+    <span class="navbar-brand mb-0 h1">Inbox</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+</div>
+<!-- Floating Compose -->
+<button type="button" class="btn btn-danger compose-sm">
+  <span class="sr-only">Danger</span>
+  <i-feather name="edit2" class="my-icon"></i-feather>
+</button>
+<div class="container-fluid">
+  <!-- Mail Header Bar -->
+  <mail-header></mail-header>
+
+  <!-- Mail Box -->
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-2 d-none d-md-block">
+      <sidebar></sidebar>
+    </div>
+    <!-- Mails tab -->
+    <div class="col-md-10 col-12">
+      <!-- Tab -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i-feather name="inbox" class="my-icon"></i-feather>
+            <span>Primary</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i-feather name="user" class="my-icon"></i-feather>
+            <span>Social</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+          <i-feather name="tag" class="my-icon"></i-feather>
+            <span>Promotions</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i-feather name="plus" class="my-icon"></i-feather>
+          </a>
+        </li>
+      </ul>
+      <div class="mail-list">
+        <mail-item *ngFor="let message of messages" [message]="message"></mail-item>
+      </div>
+    </div>
+  </div>
+</div>

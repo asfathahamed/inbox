@@ -1,0 +1,14 @@
+p {
+  font-family: Lato;
+}
+
+.compose-sm {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 1010;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  box-shadow: 0 0 10px 5px rgba(0,0,0, 0.3);
+}

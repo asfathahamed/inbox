@@ -1,0 +1,58 @@
+
+  <div class="row border-bottom mb-4">
+    <!-- Header Sidebar -->
+    <div class="col-md-2 d-none d-md-block">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="appsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mail
+        </button>
+        <div class="dropdown-menu" aria-labelledby="appsDropdown">
+          <a class="dropdown-item" href="#">Contact</a>
+          <a class="dropdown-item" href="#">Hanger</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mail Actions -->
+    <div class="col-md-10 col-12">
+      <div class="header-actions justify-content-between">
+        <div class="header-actions-main">
+          <!-- Selection -->
+          <div class="input-group input-group-sm mr-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+          <!-- Refresh -->
+          <button type="button" class="btn btn-outline-dark btn-sm mr-2">
+            <i-feather name="refresh-cw" class="my-icon-refresh"></i-feather>
+          </button>
+          <!-- More -->
+          <div class="dropdown">
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="moreActionsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </button>
+            <div class="dropdown-menu" aria-labelledby="moreActionsDropdown">
+              <a class="dropdown-item" href="#">Read</a>
+              <a class="dropdown-item" href="#">Unread</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <page-control [total]="totalMessages"></page-control>
+        </div>
+      </div>
+    </div>
+  </div>
